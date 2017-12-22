@@ -20,3 +20,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
 }
+
+.app-header {
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  height: 95vh;
+  width: 100%;
+}
