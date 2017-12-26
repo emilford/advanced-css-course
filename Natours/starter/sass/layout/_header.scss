@@ -7,29 +7,28 @@
   height: 95vh;
   position: relative;
   width: 100%;
-}
 
-.app-header__logo-wrapper {
-  left: 40px;
-  position: absolute;
-  top: 40px;
-}
+  &__logo-wrapper {
+    left: 40px;
+    position: absolute;
+    top: 40px;
+  }
 
-.app-header__logo {
-  height: 35px;
-}
+  &__logo {
+    height: 35px;
+  }
 
-.app-header__callout-wrapper {
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 40%;
-  transform: translate(-50%, -50%);
-}
+  &__callout-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
 
-.app-header__callout {
-  color: white;
-  margin-bottom: 60px;
-  text-transform: uppercase;
+  &__callout {
+    color: white;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
 }
-

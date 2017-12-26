@@ -59,8 +59,7 @@ body {
   font-weight: 700;
   letter-spacing: 17.4px; }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   border-radius: 100px;
   display: inline-block;
   padding: 15px 40px;
@@ -89,23 +88,19 @@ body {
   height: 95vh;
   position: relative;
   width: 100%; }
-
-.app-header__logo-wrapper {
-  left: 40px;
-  position: absolute;
-  top: 40px; }
-
-.app-header__logo {
-  height: 35px; }
-
-.app-header__callout-wrapper {
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 40%;
-  transform: translate(-50%, -50%); }
-
-.app-header__callout {
-  color: white;
-  margin-bottom: 60px;
-  text-transform: uppercase; }
+  .app-header__logo-wrapper {
+    left: 40px;
+    position: absolute;
+    top: 40px; }
+  .app-header__logo {
+    height: 35px; }
+  .app-header__callout-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+  .app-header__callout {
+    color: white;
+    margin-bottom: 60px;
+    text-transform: uppercase; }
