@@ -1,0 +1,50 @@
+.row {
+  @include clearfix;
+
+  margin: 0 auto;
+  max-width: $grid-width;
+
+  &:not(:last-child) {
+    margin-bottom: $grid-gutter-row;
+  }
+
+  [class^="col"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $grid-gutter-column;
+    }
+  }
+
+  $width-1-of-2: calc((100% - (1 * #{$grid-gutter-column})) / 2);
+  $width-1-of-3: calc((100% - (2 * #{$grid-gutter-column})) / 3);
+  $width-1-of-4: calc((100% - (3 * #{$grid-gutter-column})) / 4);
+
+  $width-2-of-3: calc((2 * #{$width-1-of-3}) + (1 * #{$grid-gutter-column}));
+  $width-2-of-4: calc((2 * #{$width-1-of-4}) + (1 * #{$grid-gutter-column}));
+  $width-3-of-4: calc((3 * #{$width-1-of-4}) + (2 * #{$grid-gutter-column}));
+
+  .col-1-of-2 {
+    width: $width-1-of-2;
+  }
+
+  .col-1-of-3 {
+    width: $width-1-of-3;
+  }
+
+  .col-2-of-3 {
+    width: $width-2-of-3;
+  }
+
+  .col-1-of-4 {
+    width: $width-1-of-4;
+  }
+
+  .col-2-of-4 {
+    width: $width-2-of-4;
+  }
+
+  .col-3-of-4 {
+    width: $width-3-of-4;
+  }
+}

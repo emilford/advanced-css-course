@@ -10,6 +10,7 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
 @import "layout/footer";
 @import "layout/forms";
@@ -17,3 +18,5 @@
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/sidebar";
+
+@import "pages/home";
