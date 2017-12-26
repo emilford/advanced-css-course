@@ -41,7 +41,7 @@ body {
   margin: 0;
   padding: 0; }
 
-.app-header__callout-primary {
+.app-header__callout--primary {
   animation-duration: 1s;
   animation-name: moveInFromLeft;
   animation-timing-function: ease-out;
@@ -50,7 +50,7 @@ body {
   font-weight: 400;
   letter-spacing: 35px; }
 
-.app-header__callout-secondary {
+.app-header__callout--secondary {
   animation-duration: 1s;
   animation-name: moveInFromRight;
   animation-timing-function: ease-out;
@@ -76,7 +76,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-1px); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777; }
 
@@ -90,7 +90,7 @@ body {
   position: relative;
   width: 100%; }
 
-.app-header__logo_wrapper {
+.app-header__logo-wrapper {
   left: 40px;
   position: absolute;
   top: 40px; }
@@ -98,7 +98,7 @@ body {
 .app-header__logo {
   height: 35px; }
 
-.app-header__callout_wrapper {
+.app-header__callout-wrapper {
   left: 50%;
   position: absolute;
   text-align: center;

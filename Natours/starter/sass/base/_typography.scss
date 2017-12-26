@@ -1,4 +1,4 @@
-.app-header__callout-primary {
+.app-header__callout--primary {
   animation-duration: 1s;
   animation-name: moveInFromLeft;
   animation-timing-function: ease-out;
@@ -8,7 +8,7 @@
   letter-spacing: 35px;
 }
 
-.app-header__callout-secondary {
+.app-header__callout--secondary {
   animation-duration: 1s;
   animation-name: moveInFromRight;
   animation-timing-function: ease-out;
