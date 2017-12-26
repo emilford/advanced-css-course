@@ -17,3 +17,39 @@
   font-weight: 700;
   letter-spacing: 1.74rem;
 }
+
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .2s;
+
+  &--secondary {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: transparent;
+    display: inline-block;
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+
+    &:hover {
+      /*
+       * NOTE: I don't care for the text effect provided here, but leaving it
+       * here commented out to learn from.
+       *
+       * text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+       * transform: skewY(2deg) skewX(15deg) scale(1.1);
+       */
+    }
+  }
+
+  &--tertiary {
+    font-size: 1.6rem;
+  }
+}
+
+.paragraph {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
