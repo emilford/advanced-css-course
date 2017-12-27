@@ -23,6 +23,11 @@
     background-color: $color-white;
     color: $color-grey-dark;
   }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }
 
 .btn-secondary {
