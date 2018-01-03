@@ -92,6 +92,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
@@ -292,6 +295,52 @@ body {
   .feature-box__text {
     font-size: 1.5rem; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  /* maintain consitent with :focus border */
+  border-radius: 2px;
+  color: inherit;
+  /* not inherited by default on form elements */
+  display: block;
+  /* default for inputs is inline-block */
+  font-family: inherit;
+  /* not inherited by default on form elements */
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  width: 90%; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a;
+    /* existing border-bottom is 3px transparent */ }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999;
+    /* format the input placeholder text */ }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  /* these label styles are only show when the input placeholder is shown,
+     * i.e., we haven't typed anything into the input field and the placeholder
+     * is still visible
+     */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .story {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
@@ -436,3 +485,7 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .booking__form {
+    border: 1px solid #000;
+    padding: 6rem;
+    width: 50%; }

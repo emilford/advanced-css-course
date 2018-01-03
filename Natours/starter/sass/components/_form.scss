@@ -1,0 +1,51 @@
+.form {
+  &__group:not(:last-child) {
+      margin-bottom: 2rem;
+  }
+
+  &__input {
+    background-color: rgba($color-white, .5);
+    border: none;
+    border-bottom: 3px solid transparent; /* maintain consitent with :focus border */
+    border-radius: 2px;
+    color: inherit; /* not inherited by default on form elements */
+    display: block; /* default for inputs is inline-block */
+    font-family: inherit; /* not inherited by default on form elements */
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    width: 90%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      border-bottom: 3px solid $color-primary; /* existing border-bottom is 3px transparent */
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-darker; /* format the input placeholder text */
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    /* these label styles are only show when the input placeholder is shown,
+     * i.e., we haven't typed anything into the input field and the placeholder
+     * is still visible
+     */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
