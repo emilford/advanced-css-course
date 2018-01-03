@@ -1,12 +1,18 @@
 .btn {
+  &,
   &:link,
   &:visited {
     border-radius: 10rem;
     display: inline-block;
+    font-size: 1.6rem;
     padding: 1.5rem 4rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .2s;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
